@@ -20,7 +20,10 @@ function fixture(options={}){
     removeEventListener(type,fn){this.listeners.set(type,(this.listeners.get(type)||[]).filter(x=>x.fn!==fn));}
     emit(type,extra={}){const e=event(type,extra);for(const item of [...(this.listeners.get(type)||[])]){item.fn(e);if(item.once)this.removeEventListener(type,item.fn);}return e;}
     focus(){document.activeElement=this;}
-    remove(){this.removed=true;}
+    remove(){
+      this.removed=true;
+      if(document.activeElement===this)document.activeElement=document.body;
+    }
     showModal(){this.open=true;}
   }
   const video=new Element('VIDEO'),poster=new Element('IMG'),logo=new Element('IMG');
@@ -94,7 +97,7 @@ function fixture(options={}){
 function complete(f){
   assert.equal(f.state,'complete');assert.equal(f.overlay.removed,true);assert.equal(f.main.inert,false);assert.equal(f.previousInert.inert,true);
   assert(!f.root.classList.contains('fx-welcome-active'));assert(!f.root.classList.contains('fx-welcome-revealing'));
-  assert.equal(f.document.activeElement,f.nav);assert.equal(f.events.size,0);assert.equal(f.timers.size,0);
+  assert.equal(f.document.activeElement,f.document.body);assert.equal(f.events.size,0);assert.equal(f.timers.size,0);
   assert.deepEqual(f.emitted,['foundryx:welcome-logo','foundryx:welcome-complete']);
   assert.equal(f.fetches,0);assert.equal(f.video.paused,true);assert.equal(f.video.src,'');
 }

@@ -57,8 +57,8 @@
     root.classList.remove('fx-welcome-pending','fx-welcome-active','fx-welcome-revealing');
     overlay.remove();document.removeEventListener('keydown',onKey,true);document.removeEventListener('visibilitychange',onVisibility);
     video.removeAttribute('src');video.load();
-    const target=document.querySelector('dialog[open] button')||document.querySelector('.fx-brand, .brand-logo')||document.querySelector('main');
-    target?.focus({preventScroll:true});resetPageStart();
+    document.querySelector('dialog[open] button')?.focus({preventScroll:true});
+    resetPageStart();
     announceLogo();document.dispatchEvent(new CustomEvent('foundryx:welcome-complete'));
   }
   function holdLogo(){
