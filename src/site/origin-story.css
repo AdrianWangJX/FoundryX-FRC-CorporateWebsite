@@ -1,0 +1,36 @@
+/* Preserve the supplied robot artwork and place the bilingual mission beneath it. */
+.origin-story-route{background:#17090e}.origin-story-route .fx-header{background:linear-gradient(180deg,#17090ef5,#17090ed9 70%,#17090e00)}
+.origin-story{position:relative;isolation:isolate;background:#17090e;max-width:1600px;margin:auto;padding:calc(var(--head-safe) + 31px) var(--gutter) 145px;overflow:hidden}
+.origin-story:before{content:'';position:absolute;z-index:-1;inset:0;background:radial-gradient(ellipse at 76% 41%,#5a28313b,transparent 57%)}
+.origin-heading{margin:0 0 36px}.origin-heading h1{font-size:1rem;font-weight:400;letter-spacing:.13em;color:#c6a57e;line-height:1.7;margin:0;display:flex;align-items:center;gap:18px}.origin-heading h1:before{content:'';width:32px;height:1px;background:#b8905e}
+.origin-composition{display:grid;grid-template-columns:1fr 1.1fr;gap:4%;align-items:start}
+.origin-narrative{position:relative;z-index:2;max-width:590px}
+.origin-statement{font-size:clamp(2.3rem,3.3vw,3.3rem);font-weight:350;line-height:1.45;letter-spacing:-.055em;color:#f1e8db;margin:0 0 32px}.origin-statement em{color:#dcbc82;font-weight:400;font-style:normal;white-space:nowrap}
+.origin-prose p{font-size:1.0625rem;line-height:1.95;color:#bda89f;margin:0 0 23px;text-wrap:pretty}.origin-prose p:last-child{margin:0}.origin-prose strong{color:#d9bc90;font-weight:400}
+.origin-visual-story{position:relative;min-width:0;margin-top:-70px}
+.origin-art{margin:0;aspect-ratio:1;mix-blend-mode:screen}
+.origin-art img{display:block;width:100%;height:auto;object-fit:contain}
+.origin-vision{margin:-24px 0 0;mix-blend-mode:screen}
+.origin-vision img{display:block;width:100%;height:auto}
+@media(min-width:1600px){.origin-prose p{font-size:1.125rem}}
+@media(max-width:1100px){.origin-composition{gap:3%;grid-template-columns:1.1fr 1fr}.origin-statement{font-size:2.4rem}.origin-prose p{font-size:1rem}.origin-visual-story{margin-top:-25px}.origin-vision{margin-top:-12px}}
+@media(max-width:760px){.origin-story{padding:calc(var(--head-safe) + 17px) 6vw 115px}.origin-heading{margin-bottom:26px}.origin-heading h1{font-size:.875rem}.origin-composition{display:flex;flex-direction:column;gap:0}.origin-narrative{display:contents}.origin-statement{order:0;font-size:clamp(1.9rem,7.2vw,2.8rem);line-height:1.5;margin:0;letter-spacing:-.045em}.origin-visual-story{order:1;width:100%;margin:0 0 30px}.origin-vision{margin-top:-10px}.origin-prose{order:2}.origin-prose p{font-size:1rem;line-height:1.9;margin-bottom:22px}}
+@media(max-width:380px){.origin-statement{font-size:1.9rem}.origin-prose p{font-size:.9375rem}}
+
+/* The history continues the page's editorial rhythm, with one connected timeline. */
+.origin-history{margin-top:88px;padding-top:52px;border-top:1px solid #b8905e40;display:grid;grid-template-columns:minmax(160px,.65fr) minmax(0,2fr);gap:7%;scroll-margin-top:calc(var(--head-safe) + 24px)}
+.origin-history-heading h2{margin:0;color:#f1e8db;font-size:clamp(1.65rem,2.3vw,2.15rem);font-weight:400;line-height:1.5;letter-spacing:.03em}
+.origin-timeline{list-style:none;margin:0;padding:0}
+.origin-milestone{position:relative;display:grid;grid-template-columns:158px minmax(0,1fr);gap:26px;padding:0 0 38px 29px;border-left:1px solid #b8905e50}
+.origin-milestone:before{content:'';position:absolute;left:-4px;top:11px;width:7px;height:7px;border-radius:50%;background:#dcbc82;box-shadow:0 0 0 5px #17090e}
+.origin-milestone h3{margin:0;color:#dcbc82;font-size:1.0625rem;line-height:1.95;font-weight:400;font-variant-numeric:tabular-nums;white-space:nowrap}
+.origin-milestone p{margin:0;color:#bda89f;font-size:1rem;line-height:1.95;text-wrap:pretty}
+.origin-milestone:last-child{padding-bottom:0;border-left-color:transparent}
+.origin-milestone-future h3{color:#e7ca96}
+.origin-milestone-future p{color:#f1e8db;font-size:1.1875rem;line-height:1.75}
+@media(max-width:1100px){.origin-history{grid-template-columns:1fr;gap:32px;margin-top:64px;padding-top:40px}.origin-milestone{grid-template-columns:160px minmax(0,1fr);gap:24px}}
+@media(max-width:760px){.origin-history{margin-top:48px;padding-top:32px;gap:28px}.origin-history-heading h2{font-size:1.5rem}.origin-milestone{grid-template-columns:1fr;gap:8px;padding:0 0 30px 23px}.origin-milestone h3{font-size:1.0625rem}.origin-milestone p{font-size:1rem;line-height:1.9}.origin-milestone-future p{font-size:1.125rem}}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  html:lang(en) .origin-story .origin-statement { font-size: clamp(30px, 3.8vw, 40px); }
+}

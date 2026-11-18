@@ -1,0 +1,56 @@
+{
+  "advisors": [
+    {
+      "id": "peng-wang",
+      "name": "Peng Wang",
+      "focus": "具身智能 · 灵巧操作",
+      "intro": "中国科学院自动化研究所研究员、博士生导师，聚焦具身智能、机器人视觉与类人灵巧操作。",
+      "details": [
+        "在多模态人工智能系统全国重点实验室开展研究，研发 Casia Hand 系列灵巧手及类人灵巧操作机器人，探索机器人对物体的抓取、交接与工具使用。",
+        "曾赴慕尼黑工业大学、加州大学伯克利分校访问研究。获北京市科学技术奖、中国自动化学会技术发明一等奖及日内瓦国际发明展金奖。"
+      ],
+      "links": [
+        {
+          "label": "中国科学院大学个人主页",
+          "url": "https://people.ucas.edu.cn/~wangpengcasia"
+        }
+      ]
+    },
+    {
+      "id": "yuanzhe-dong",
+      "name": "Yuanzhe Dong",
+      "focus": "深度学习 · 人工智能应用",
+      "intro": "NVIDIA · 深度学习应用，关注如何将人工智能用于解决真实场景中的问题。",
+      "details": [
+        "在斯坦福大学攻读机械工程硕士，学习方向涉及机器人。关注深度学习在计算机视觉与自然语言处理中的应用。",
+        "拥有 NVIDIA 与 Landing AI 工作经历，将机器学习研究与实际工程应用相结合。"
+      ],
+      "links": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/yuanzhe-dong-97989546"
+        },
+        {
+          "label": "斯坦福大学个人档案",
+          "url": "https://profiles.stanford.edu/yuanzhe-dong"
+        }
+      ]
+    },
+    {
+      "id": "bowen-jiang",
+      "name": "Bob Jiang",
+      "focus": "强化学习 · 机器人操作",
+      "intro": "得克萨斯大学奥斯汀分校博士生，研究机器人灵巧操作，师从 Roberto Martín-Martín。",
+      "details": [
+        "曾在卡内基梅隆大学机器人研究所攻读硕士，师从 David Held，研究强化学习与机器人操作。本科毕业于哈维穆德学院工程专业，并修读视觉艺术方向。",
+        "研究围绕灵巧操作、工具使用与操作技能学习展开，代表工作包括 CoDex、HACMan++ 与 HACMan，发表于 ICRA、RSS 和 CoRL 等机器人学术会议。"
+      ],
+      "links": [
+        {
+          "label": "个人研究主页",
+          "url": "https://jiangbowen0008.github.io/"
+        }
+      ]
+    }
+  ]
+}

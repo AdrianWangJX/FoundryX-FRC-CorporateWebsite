@@ -1,0 +1,110 @@
+/* Viewport sizing only. Photography, colours, typefaces and content stay intact. */
+:root{--screen:100vh;--section-space:clamp(64px,10vh,140px)}
+@supports(height:100dvh){:root{--screen:100dvh;--section-space:clamp(64px,10dvh,140px)}}
+html,body{width:100%;min-width:0}
+main{width:100%;min-width:0}
+main>section,.frc-heading,.article-layout{min-width:0}
+.hero,.site-home .hero,.site-document .document-hero{height:auto;min-height:var(--screen);max-height:none;display:flex;align-items:center}
+.hero .hero-copy,.site-document .hero .hero-copy{width:100%;max-width:none;padding:clamp(130px,19vh,240px) var(--gutter) clamp(105px,15vh,180px)}
+.hero .hero-copy h1{font-size:clamp(46px,min(6.9vw,10vh),114px)}
+.site-document .hero .hero-copy h1{font-size:clamp(42px,min(6.2vw,10vh),100px)}
+.hero .hero-copy h1 span{max-width:100%;width:auto;white-space:normal;overflow-wrap:break-word}
+.hero .hero-copy h1 span:last-child{max-width:calc(100% - 7vw)}
+.site-document .without-photograph .hero-copy h1 span:last-child{max-width:100%}
+.hero .hero-photo{inset:0;aspect-ratio:auto;height:100%}
+.hero .hero-photo img{width:100%;height:100%;object-fit:contain}
+.hero .hero-signature{bottom:clamp(22px,4vh,60px)}
+.hero-actions{align-items:center}
+.hero-actions .hero-cta{max-width:100%}
+.hero-actions .hero-cta:last-child{margin-top:25px}
+.manifesto,.content-section,.closing,.teams-section,.moments-section,.frc-heading,.join-section{min-height:var(--screen);height:auto;padding-top:var(--section-space);padding-bottom:var(--section-space)}
+.manifesto,.content-section:not(.split-editorial):not(.contact-choices),.closing,.teams-section,.moments-section{display:flex;flex-direction:column;justify-content:center}
+.split-editorial,.contact-choices,.frc-heading{align-content:center}
+.content-section>*{min-width:0}
+.content-section>.line-link{align-self:flex-start}
+.frc-track{height:var(--screen);min-height:0;max-height:none}
+.frc-frame{display:flex;align-items:flex-end}
+.frc-frame .frame-copy,.frame-code .frame-copy,.frame-field .frame-copy{position:relative;inset:auto;max-width:65%;margin:100px 5vw clamp(100px,13vh,150px);padding:0}
+.frame-copy h3{font-size:clamp(34px,min(4.2vw,7vh),66px)}
+.frame-copy p{font-size:clamp(15px,1.2vw,17px)}
+.frc-chapters{top:auto;bottom:22px}
+.gallery-shell{height:clamp(280px,60vh,780px)}
+.school-title{padding-top:0;padding-bottom:var(--section-space)}
+.schools-section{min-height:var(--screen);padding-top:var(--section-space)}
+.school-panorama{min-height:min(65vh,800px)}
+.join-section{padding-top:clamp(200px,40vh,650px);padding-bottom:clamp(80px,12vh,160px)}
+.article-layout{max-width:none;min-height:var(--screen);grid-template-columns:minmax(180px,230px) minmax(0,760px);justify-content:center}
+.article-body,.prose,.result-case>div,.story-spread>div{min-width:0;overflow-wrap:break-word}
+.section-nav,.filter-tabs,.footer-links{flex-wrap:wrap}
+.button,.line-link,.text-link{max-width:100%}
+dialog{max-height:calc(var(--screen) - 32px);max-width:calc(100vw - 32px);padding:clamp(24px,5vw,65px)}
+.menu-dialog nav{font-size:clamp(20px,3.5vh,32px);gap:clamp(12px,2vh,24px)}
+@media(max-width:1100px){
+ .site-home .header nav,.site-document .header nav{display:none}
+ .site-home .header .menu-toggle,.site-document .header .menu-toggle{display:block;margin-left:auto}
+}
+@media(max-width:900px){
+ .article-layout{grid-template-columns:minmax(0,1fr)}
+ .article-body{max-width:none}
+ .site-home .menu-dialog nav,.site-document .menu-dialog nav{font-size:clamp(20px,3.5vh,25px);gap:clamp(12px,2vh,20px)}
+}
+/* Unpinned chapters keep their native horizontal swipe, with text in normal flow. */
+@media(max-width:767px),(max-height:649px){
+ .frc-track{height:auto;min-height:var(--screen);align-items:stretch}
+ .frc-frame{height:auto;min-height:var(--screen);display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start}
+ .frc-frame>img{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:1.5;max-height:52vh;object-fit:contain;flex-shrink:0}
+ .frc-frame .frame-copy,.frame-code .frame-copy,.frame-field .frame-copy{max-width:none;margin:0;padding:28px 6vw 105px}
+ .frame-copy h3{font-size:clamp(30px,4.5vw,48px)}
+ .frame-copy p{font-size:16px;max-width:42em;line-height:1.9}
+ .frc-frame:after{pointer-events:none}
+ .frc-chapters{top:auto;bottom:20px}
+}
+@media(max-width:767px){
+ .hero,.site-home .hero,.site-document .document-hero{align-items:center}
+ .hero .hero-copy,.site-document .hero .hero-copy{padding:calc(90px + min(54vw,32vh)) 6vw 105px}
+ .site-document .without-photograph .hero-copy{padding:140px 6vw 105px}
+ .hero .hero-photo{inset:90px 0 auto;height:auto;aspect-ratio:1.5;max-height:42vh}
+ .hero .hero-copy h1,.site-document .hero .hero-copy h1{font-size:clamp(32px,10.8vw,70px);line-height:1.32}
+ .hero .hero-copy h1 span:last-child{font-size:8.8vw;margin:12px 0 0;max-width:100%}
+ .site-document .hero .hero-copy h1 span:last-child{font-size:9.5vw;max-width:100%}
+ .site-document .without-photograph .hero-copy h1,.site-document .without-photograph .hero-copy h1 span{font-size:clamp(30px,8.7vw,54px);line-height:1.4}
+ .hero .hero-description{max-width:36em}
+ .hero-actions .hero-cta,.hero-actions .hero-cta:last-child{margin-top:16px}
+ .hero .hero-signature{bottom:30px}
+ .gallery-shell{height:clamp(280px,48vh,530px)}
+ .school-panorama{min-height:0}
+ .join-section{padding-top:calc(66.6667vw + 24px);padding-bottom:80px}
+ .section-heading h2{font-size:clamp(30px,8.5vw,42px)}
+ .closing h2{font-size:clamp(32px,9vw,48px)}
+ .mentor-card h3,.team-card-name{overflow-wrap:anywhere}
+}
+@media(max-width:359px){
+ .mentor-grid{grid-template-columns:1fr}
+ .mentor-card{min-height:0;border-left:0;border-top:1px solid var(--fx-line)}
+ .mentor-card h3{font-size:28px}
+ .mentor-serial{margin-bottom:24px}
+ .team-filters button{padding-inline:14px}
+ .outcome-more{grid-template-columns:1fr}
+ .hero-actions{gap:10px 20px}
+}
+@media(min-width:768px) and (max-height:649px){
+ .hero .hero-copy,.site-document .hero .hero-copy{padding-top:110px;padding-bottom:75px}
+ .hero .hero-copy h1,.site-document .hero .hero-copy h1{font-size:clamp(36px,6.5vh,52px);line-height:1.2}
+ .hero .hero-copy>p:first-child{margin-bottom:18px}
+ .hero .hero-copy .hero-description{margin-top:18px;line-height:1.7}
+ .hero .hero-copy>.button,.hero .hero-copy>.line-link{margin-top:18px}
+ .hero .hero-signature{bottom:18px;font-size:11vw}
+ .frc-frame>img{position:absolute;inset:0;height:100%;max-height:none;aspect-ratio:auto}
+ .frc-frame{justify-content:flex-end}
+ .frc-frame .frame-copy{padding-top:65px;max-width:85%}
+ .gallery-shell{height:clamp(260px,65vh,420px)}
+}
+
+/* Keep room for the arrow beside the reading links and for the complete
+   English dialog title on a narrow screen. */
+@media (max-width: 480px) {
+  html:lang(en) .site-document .hero-copy .line-link { gap: 12px; }
+  html:lang(en) .site-document .closing-actions .button { gap: 8px; padding-inline: 12px; }
+  html:lang(en) .site-document #consult-dialog { padding-inline: clamp(16px, 5vw, 24px); }
+  html:lang(en) .site-document #consult-title { font-size: clamp(20px, 6.25vw, 30px); }
+}

@@ -1,0 +1,147 @@
+{
+  "model": "depth-anything/Depth-Anything-V2-Small-hf",
+  "model_source": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf",
+  "official_usage": "https://huggingface.co/docs/transformers/model_doc/depth_anything_v2",
+  "license": "Apache-2.0",
+  "license_source": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf",
+  "model_commit": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+  "created_utc": "2026-09-18T21:23:32Z",
+  "torch": "2.14.0",
+  "transformers": "4.57.6",
+  "python": "3.12.14",
+  "device": "mps",
+  "depth_convention": "Relative inverse depth. Higher=nearer; 1 (uint8 255/uint16 65535)=nearest estimated surface; 0=farthest. Not metric depth.",
+  "normalization": "Per-image raw depth min-max normalization after bicubic interpolation to original image dimensions; no hand-painted or semantic masks.",
+  "rgb_unchanged": true,
+  "coordinate_convention": "Row-major top-to-bottom, left-to-right; origin top-left; same aspect ratio and orientation as input.",
+  "images": [
+    {
+      "input": "src/site/static/assets/photos/official-immersive-venue.jpeg",
+      "input_sha256": "554e7d83ca9ab9610f1a14b246ce2ad9a0b98d8da2f54c7a0ed0ac3b20f77268",
+      "width": 1296,
+      "height": 866,
+      "inference_input_shape": [
+        1,
+        3,
+        518,
+        770
+      ],
+      "inference_seconds": 3.325,
+      "raw_min": -0.11651986837387085,
+      "raw_max": 11.494575500488281,
+      "normalized_percentiles": {
+        "0": 0.0,
+        "1": 0.010035217739641666,
+        "10": 0.026799234561622143,
+        "25": 0.04785721097141504,
+        "50": 0.08774258196353912,
+        "75": 0.22630923986434937,
+        "90": 0.36157621443271637,
+        "99": 0.8674469590187065,
+        "100": 1.0
+      },
+      "preview": "official-immersive-venue-depth.png",
+      "preview16": "official-immersive-venue-depth16.png",
+      "frontend_json": "official-immersive-venue-depth.json",
+      "frontend_png": "official-immersive-venue-depth-512.png",
+      "frontend_width": 512,
+      "frontend_height": 342
+    },
+    {
+      "input": "src/site/static/assets/photos/official-immersive-workshop.webp",
+      "input_sha256": "e3fc034ae0b948541dbadb806e8c6226454a95ca2ad237399ac38b0abf146a27",
+      "width": 1260,
+      "height": 840,
+      "inference_input_shape": [
+        1,
+        3,
+        518,
+        784
+      ],
+      "inference_seconds": 3.266,
+      "raw_min": -0.3055075705051422,
+      "raw_max": 10.388893127441406,
+      "normalized_percentiles": {
+        "0": 0.0,
+        "1": 0.028567058965563774,
+        "10": 0.05302968695759774,
+        "25": 0.10959569551050663,
+        "50": 0.19630146771669388,
+        "75": 0.29938266426324844,
+        "90": 0.623631078004837,
+        "99": 0.945554141998291,
+        "100": 1.0
+      },
+      "preview": "official-immersive-workshop-depth.png",
+      "preview16": "official-immersive-workshop-depth16.png",
+      "frontend_json": "official-immersive-workshop-depth.json",
+      "frontend_png": "official-immersive-workshop-depth-512.png",
+      "frontend_width": 512,
+      "frontend_height": 341
+    },
+    {
+      "input": "src/site/static/assets/photos/official-immersive-engineering.png",
+      "input_sha256": "432ffa02cee71c05a70293dbd1202de6e71989f08936c2c87831e9eee8ae3b33",
+      "width": 1280,
+      "height": 850,
+      "inference_input_shape": [
+        1,
+        3,
+        518,
+        784
+      ],
+      "inference_seconds": 0.274,
+      "raw_min": -0.5057373642921448,
+      "raw_max": 6.455284595489502,
+      "normalized_percentiles": {
+        "0": 0.0,
+        "1": 0.07265274971723557,
+        "10": 0.07265274971723557,
+        "25": 0.1717231459915638,
+        "50": 0.39730750024318695,
+        "75": 0.5656377226114273,
+        "90": 0.7344735503196715,
+        "99": 0.9122124385833741,
+        "100": 1.0
+      },
+      "preview": "official-immersive-engineering-depth.png",
+      "preview16": "official-immersive-engineering-depth16.png",
+      "frontend_json": "official-immersive-engineering-depth.json",
+      "frontend_png": "official-immersive-engineering-depth-512.png",
+      "frontend_width": 512,
+      "frontend_height": 340
+    },
+    {
+      "input": "src/site/static/assets/photos/official-immersive-field.webp",
+      "input_sha256": "6842baa673118845bc18130bd6a53539ebc44603de4c439d4c1af06e7a93ed0a",
+      "width": 1280,
+      "height": 850,
+      "inference_input_shape": [
+        1,
+        3,
+        518,
+        784
+      ],
+      "inference_seconds": 0.285,
+      "raw_min": -0.3871175944805145,
+      "raw_max": 7.216565132141113,
+      "normalized_percentiles": {
+        "0": 0.0,
+        "1": 0.053950881399214265,
+        "10": 0.08279053643345832,
+        "25": 0.10865043289959431,
+        "50": 0.20654744654893875,
+        "75": 0.5377894788980484,
+        "90": 0.7252016544342041,
+        "99": 0.9387201672792435,
+        "100": 1.0
+      },
+      "preview": "official-immersive-field-depth.png",
+      "preview16": "official-immersive-field-depth16.png",
+      "frontend_json": "official-immersive-field-depth.json",
+      "frontend_png": "official-immersive-field-depth-512.png",
+      "frontend_width": 512,
+      "frontend_height": 340
+    }
+  ]
+}

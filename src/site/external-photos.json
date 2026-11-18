@@ -1,0 +1,56 @@
+{
+  "about": {
+    "src": "assets/photos/official-20230420_bm_0125_1.webp",
+    "alt": "多名 FRC 队员围绕机器人协作检查机构（FIRST 官方赛事照片）",
+    "width": 4096,
+    "height": 2732,
+    "source": "https://www.firstinspires.org/community/teams",
+    "original": "https://www.firstinspires.org/hubfs/20230420_bm_0125_1.webp",
+    "use": "Private design preview; official source; commercial re-use permission not verified"
+  },
+  "frc": {
+    "src": "assets/photos/official-frc-eventsearch-2480-CTArow.webp",
+    "alt": "驾驶站后专注观察比赛的 FRC 队员（FIRST 官方赛事照片）",
+    "width": 2480,
+    "height": 820,
+    "source": "https://www.firstinspires.org/programs/frc",
+    "original": "https://www.firstinspires.org/hubfs/web/program/frc/frc-eventsearch-2480-CTArow.webp",
+    "use": "Private design preview; official source; commercial re-use permission not verified"
+  },
+  "programs": {
+    "src": "assets/photos/official-frc260501ben00690.jpg",
+    "alt": "维修区里，队员在机器人旁使用笔记本电脑（FIRST 官方赛事照片）",
+    "width": 6500,
+    "height": 4335,
+    "source": "https://community.firstinspires.org/2027-season-checkout-and-registration-changes",
+    "original": "https://www.firstinspires.org/hubfs/image-library/frc260501ben00690.jpg",
+    "use": "Private design preview; official source; commercial re-use permission not verified"
+  },
+  "results": {
+    "src": "assets/photos/official-cmp-carousel-9.webp",
+    "alt": "锦标赛现场，队员在彩纸中相拥庆祝（FIRST 官方赛事照片）",
+    "width": 1280,
+    "height": 850,
+    "source": "https://www.firstinspires.org/programs/first-championship",
+    "original": "https://www.firstinspires.org/hubfs/image-library/web/cmp-carousel-9.webp",
+    "use": "Private design preview; official source; commercial re-use permission not verified"
+  },
+  "stories": {
+    "src": "assets/photos/official-graciousprofessionalism_1.webp",
+    "alt": "FRC 赛事现场，长者与学生队员握手交流（FIRST 官方赛事照片）",
+    "width": 4800,
+    "height": 3082,
+    "source": "https://www.firstinspires.org/about",
+    "original": "https://www.firstinspires.org/hubfs/graciousprofessionalism_1.webp",
+    "use": "Private design preview; official source; commercial re-use permission not verified"
+  },
+  "contact": {
+    "src": "assets/photos/official-cmp-carousel-10.webp",
+    "alt": "FRC 场馆全景，观众席与比赛区域同时入镜（FIRST 官方赛事照片）",
+    "width": 1280,
+    "height": 850,
+    "source": "https://www.firstinspires.org/programs/first-championship",
+    "original": "https://www.firstinspires.org/hubfs/image-library/web/cmp-carousel-10.webp",
+    "use": "Private design preview; official source; commercial re-use permission not verified"
+  }
+}

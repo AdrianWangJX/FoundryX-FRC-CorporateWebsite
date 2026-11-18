@@ -1,0 +1,27 @@
+# Build products, local previews and tools
+/dist/
+/work/
+/exports/
+/node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.log
+/src/immersive/depth/cleaned.js
+/src/site/published-welcome/welcome.js
+
+# Large published videos are restored from the checksum manifest during build.
+/src/site/published-welcome/films/*.mp4
+/src/site/published-welcome/films-mobile/*.mp4
+/src/site/published-welcome/films-stream/*.mp4
+
+# Local credentials and inquiry storage
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.sqlite*
+*.db
+*.db-wal
+*.db-shm

@@ -1,0 +1,5 @@
+SITE_TITLE = "FoundryX·为中国培养下一代科技领袖"
+NAV_ITEMS=[('index.html#idea','首页','home'),('index.html#about-frc','认识FRC','frc'),('about-origin.html#beginning','关于FoundryX','about'),('knowledge.html','知识库','knowledge'),('join.html#student','加入我们','join')]
+def navigation(active='home',home=False):
+ links=''.join(f'<a href="{("#idea" if key=="home" else "#about-frc") if home and key in ("home","frc") else href}" data-section="{key}"'+(' aria-current="page"' if active==key else '')+f'>{text}</a>' for href,text,key in NAV_ITEMS)
+ return f'<header class="fx-header"><a class="fx-brand" href="{"#idea" if home else "index.html#idea"}" aria-label="FoundryX 首页"><img src="assets/brand-logo.svg" width="170" height="55" alt="FoundryX"></a><button class="fx-nav-toggle" type="button" aria-controls="fx-primary-nav" aria-expanded="false" aria-label="打开主导航" hidden><span class="fx-nav-label">菜单</span><span class="fx-nav-icon" aria-hidden="true"></span></button><nav id="fx-primary-nav" class="top-nav" aria-label="主导航">{links}</nav></header>'

@@ -1,0 +1,58 @@
+{
+  "videos": [
+    {
+      "id": "frc-start",
+      "title": "走进 FRC 机器人竞赛",
+      "src": "assets/films-mobile/frc-field-960-20261001.mp4",
+      "poster": "assets/films/frc-field-poster-20260928.webp"
+    },
+    {
+      "id": "frc-season",
+      "title": "FIRST：从兴趣到未来",
+      "src": "assets/films-mobile/frc-season-960-20261001.mp4",
+      "poster": "assets/films/frc-season-poster-20260928.webp"
+    },
+    {
+      "id": "frc-growth",
+      "title": "机器人之外的成长",
+      "src": "assets/films-mobile/frc-growth-960-20261001.mp4",
+      "poster": "assets/films/frc-growth-poster-20260928.webp"
+    },
+    {
+      "id": "frc-roles",
+      "title": "1678 战队机器人技术解析",
+      "src": "assets/films-mobile/frc-roles-960-20261001.mp4",
+      "poster": "assets/films/frc-roles-poster-20260928.webp"
+    },
+    {
+      "id": "frc-1690-2025",
+      "title": "1690 战队：2025 赛季回顾",
+      "src": "assets/films-stream/frc-library-05-960-20261008.mp4",
+      "poster": "assets/films/frc-library-05-poster-20260928.webp"
+    },
+    {
+      "id": "frc-148-season",
+      "title": "148 战队：从备赛到赛场",
+      "src": "assets/films-stream/frc-library-06-960-20261008.mp4",
+      "poster": "assets/films/frc-library-06-poster-20260928.webp"
+    },
+    {
+      "id": "frc-254-design",
+      "title": "254 战队机器人设计解析",
+      "src": "assets/films-stream/frc-library-07-960-20261008.mp4",
+      "poster": "assets/films/frc-library-07-poster-20260928.webp"
+    },
+    {
+      "id": "frc-1690-2024",
+      "title": "1690 战队：2024 赛季回顾",
+      "src": "assets/films-stream/frc-library-08-960-20261008.mp4",
+      "poster": "assets/films/frc-library-08-poster-20260928.webp"
+    },
+    {
+      "id": "frc-keep-going",
+      "title": "从失败中继续前进",
+      "src": "assets/films-stream/frc-library-09-960-20261008.mp4",
+      "poster": "assets/films/frc-library-09-poster-20260928.webp"
+    }
+  ]
+}

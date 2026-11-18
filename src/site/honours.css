@@ -1,0 +1,118 @@
+/* An annual archive, with the selected year and complete event results sharing one stage. */
+.honours-route{background:#17090e}.honours-route .fx-header{background:#17090ef7;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.honours-page{max-width:1540px;margin:auto;padding:calc(var(--head-safe) + 30px) var(--gutter) 145px;min-height:100svh}
+.honours-heading{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin:0 0 38px;padding:0;border:0;position:static}.honours-heading:before{display:none}.honours-heading h1{font-size:clamp(2.5rem,3.8vw,3.5rem);line-height:1.3;font-weight:350;letter-spacing:-.05em;margin:0;color:#efdfc7}.honours-period{font-size:.875rem;color:#ae8e72;letter-spacing:.08em;margin:0}
+.honours-years{position:relative;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 0 15px;border-bottom:1px solid #ac855349}
+.honours-years button{position:relative;appearance:none;border:0;background:none;color:#a99283;font:400 .9375rem/1.5 Sora,Arial,sans-serif;letter-spacing:-.01em;padding:10px 8px;cursor:pointer;transition:color .2s;white-space:nowrap}.honours-years button:first-child{padding-left:0}.honours-years button:last-child{padding-right:0;font-family:inherit;font-size:.875rem;margin-left:20px}.honours-years button:after{content:'';position:absolute;bottom:-18px;left:50%;width:0;height:4px;transform:translateX(-50%) skewX(-35deg);background:#d8b77d;transition:width .2s}.honours-years button[aria-pressed=true]{color:#f1d19d}.honours-years button[aria-pressed=true]:after{width:36px}.honours-years button:hover{color:#e9c994}.honours-years button:focus-visible{outline:1px solid #d5b17a;outline-offset:4px}
+.honours-collection{position:relative;min-width:0}
+.honours-year{display:grid;grid-template-columns:185px minmax(0,1fr);gap:6%;padding:47px 0 52px;border-bottom:1px solid #a9845826;margin:0;background:none;color:var(--paper)}.honours-year[hidden]{display:none}
+.honours-year-heading{position:sticky;top:calc(var(--head-safe) + 25px);align-self:start;padding:0;margin:0}.honours-year-heading h3{font-family:Sora,Arial,sans-serif;position:static;font-size:3.5rem;line-height:1.1;font-weight:300;letter-spacing:-.08em;color:#bc9c77;background:none;padding:0;margin:0;border:0}
+.honours-composition{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 45px;padding:0;margin:0;min-width:0}
+.honour-item{position:relative;display:flex;flex-direction:column;gap:12px;padding:0;margin:0;border:0;min-width:0}.honour-item h4{display:flex;flex-wrap:wrap;flex-direction:row;gap:5px 20px;font-size:1.25rem;font-weight:400;line-height:1.65;margin:0;min-width:0}
+.award-name{font-size:1.25rem;color:#e4ca9f;font-weight:400;line-height:1.65;overflow-wrap:anywhere}.honours-context{padding:0;min-width:0}.honours-event{font-size:.9375rem;color:#ad988c;line-height:1.85;margin:0;overflow-wrap:anywhere}
+.honours-selected .honours-year{position:relative;isolation:isolate;grid-template-columns:250px minmax(0,1fr);gap:7%;min-height:420px;padding:55px 0 36px;border:0}
+.honours-selected .honours-year:before{content:'';position:absolute;z-index:-1;inset:0 -8vw -20px -8vw;background:radial-gradient(ellipse at 1% 42%,#56212c55,transparent 70%)}
+.honours-selected .honours-year-heading{position:relative;top:auto;padding-top:1px}.honours-selected .honours-year-heading:after{content:'';display:block;width:160px;height:4px;clip-path:polygon(0 0,100% 0,95% 100%,0 100%);background:linear-gradient(90deg,#daba82,#7d553044);margin-top:36px}.honours-selected .honours-year-heading h3{font-size:6.6rem;color:#e4c597;font-weight:250;letter-spacing:-.1em}
+.honours-selected .honours-composition{align-content:start;gap:34px 45px;padding-top:10px}.honours-selected .award-name{font-size:1.3rem}.honours-selected .honour-item{gap:12px}
+.honours-selected .honours-latest .honours-composition{padding-top:2px;grid-template-columns:1.15fr 1fr;gap:8%;align-content:start}.honours-selected .honours-latest .honour-item{gap:34px;padding-top:0}.honours-selected .honours-latest .honour-item h4{gap:25px}.honours-selected .honours-latest .award-name{font-size:clamp(2.5rem,4.2vw,4rem);font-weight:350;letter-spacing:-.05em;line-height:1.5;color:#eed4a5}.honours-selected .honours-latest .honours-event{font-size:1.0625rem;max-width:21em}
+@media(max-width:1100px){.honours-years{gap:10px}.honours-years button{font-size:.8125rem;padding-inline:5px}.honours-selected .honours-year{grid-template-columns:190px minmax(0,1fr);gap:6%}.honours-selected .honours-year-heading h3{font-size:5.2rem}.honours-selected .honours-latest .award-name{font-size:2.65rem}.honours-selected .honours-latest .honour-item h4{gap:18px}.honours-composition{gap:30px}.honours-selected .honours-composition{gap:32px}}
+@media(max-width:760px){.honours-page{padding:calc(var(--head-safe) + 19px) 6vw 130px}.honours-heading{margin-bottom:27px;gap:16px}.honours-heading h1{font-size:2.25rem}.honours-period{font-size:.75rem;letter-spacing:0}.honours-years{overflow-x:auto;justify-content:flex-start;gap:23px;margin-inline:-6vw;padding:0 6vw 15px;scrollbar-width:thin;scrollbar-color:#ae875540 transparent}.honours-years button{font-size:.8125rem;padding:8px 0}.honours-years button:last-child{margin-left:8px;font-size:.8125rem}.honours-years button:after{bottom:-16px}.honours-year,.honours-selected .honours-year{display:block;padding:29px 0 35px;min-height:0}.honours-year-heading,.honours-selected .honours-year-heading{position:static;margin-bottom:29px;padding:0}.honours-year-heading h3{font-size:2.5rem}.honours-selected .honours-year-heading h3{font-size:5rem}.honours-selected .honours-year-heading:after{width:105px;height:3px;margin-top:17px}.honours-composition,.honours-selected .honours-composition{grid-template-columns:1fr;gap:28px;padding:0}.award-name,.honours-selected .award-name{font-size:1.25rem}.honours-event{font-size:.9375rem}.honours-selected .honours-latest .honours-composition{grid-template-columns:1.15fr 1fr;gap:28px;padding-top:10px}.honours-selected .honours-latest .award-name{font-size:1.875rem}.honours-selected .honours-latest .honour-item{gap:22px}.honours-selected .honours-latest .honour-item h4{gap:18px}.honours-selected .honours-latest .honours-event{font-size:.9375rem}.honour-item h4{gap:4px 18px}}
+@media(max-width:360px){.honours-selected .honours-latest .award-name{font-size:1.65rem}.honours-selected .honours-latest .honours-composition{gap:20px}.honours-selected .honours-latest .honour-item h4{gap:12px}.honours-heading h1{font-size:2rem}.honours-period{font-size:.6875rem}}
+.honours-route{overflow-x:clip}.honours-event{text-wrap:pretty}
+.honours-page{overflow:clip}
+.honours-page .honours-year[hidden]{display:none}
+@media(max-width:760px){.honours-years{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px 7px;margin-inline:0;padding:0 0 12px;overflow:visible}.honours-years button{padding:8px 0}.honours-years button:last-child{grid-column:span 2;margin:0}.honours-years button:after{bottom:0}.honours-years button[aria-pressed=true]:after{width:24px}}
+.honours-years button:after{transition:none}
+/* The 2026 season pairs podium results with two quieter technical distinctions. */
+.honours-selected .honours-latest .honour-awards-expanded{display:grid;grid-template-columns:repeat(2,max-content);gap:14px 28px;align-items:baseline}
+.honours-selected .honours-latest .honour-awards-expanded .award-name{white-space:nowrap;overflow-wrap:normal}
+.honours-selected .honours-latest .honour-awards-expanded .award-technical{font-size:clamp(1rem,1.3vw,1.1875rem);font-weight:400;letter-spacing:.015em;line-height:1.65;color:#bf9d74}
+@media(max-width:1100px){.honours-selected .honours-latest .honour-awards-expanded{column-gap:20px}}
+@media(max-width:760px){.honours-selected .honours-latest .honours-composition{grid-template-columns:1fr;gap:36px}.honours-selected .honours-latest .honour-awards-expanded{grid-template-columns:repeat(2,minmax(0,max-content));gap:12px 32px}.honours-selected .honours-latest .honour-awards-expanded .award-name{font-size:2.5rem}.honours-selected .honours-latest .honour-awards-expanded .award-technical{font-size:1rem}.honours-selected .honours-latest .honour-item{gap:18px}}
+
+/* The achievement page joins the season archive and student destinations. */
+.honours-page .honours-heading{align-items:center;margin-bottom:52px}
+.honours-sections{display:flex;flex-wrap:wrap;gap:12px 28px}
+.honours-sections a{color:#cfb68f;font-size:15px;text-decoration:none;padding:10px 0;border-bottom:1px solid #ac855355}
+.honours-sections a:hover{color:#f1d19d;border-color:currentColor}
+.honours-sections a:focus-visible{outline:1px solid #d5b17a;outline-offset:5px}
+.honours-archive,.honours-alumni{scroll-margin-top:calc(var(--head-safe) + 24px)}
+.honours-subheading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:20px}
+.honours-subheading h2{font-size:24px;line-height:1.5;font-weight:400;letter-spacing:-.025em;color:#efdfc7;margin:0}
+.honours-year-range .honours-year-heading h3{font-size:2.1rem;line-height:1.4;letter-spacing:-.06em}
+.honours-selected .honours-year-range .honours-year-heading h3{font-size:3.1rem;line-height:1.35;letter-spacing:-.06em}
+.honours-season-note{margin:0;font-size:24px;line-height:1.6;color:#c8ad87}
+.honours-alumni{padding-top:56px;border-top:1px solid #ac855349;margin-top:28px}
+.alumni-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 7%;margin:28px 0 0}
+.alumni-item{display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid #a9845838;padding:25px 0;min-width:0}
+.alumni-item dt{font-size:22px;line-height:1.6;color:#ded2c2;overflow-wrap:anywhere}
+.alumni-item dd{display:flex;align-items:baseline;gap:9px;white-space:nowrap;margin:0;color:#e4c597}
+.alumni-count{font:300 42px/1.2 Sora,Arial,sans-serif;letter-spacing:-.06em;font-variant-numeric:tabular-nums}
+.alumni-unit{font-size:14px;color:#ad988c}
+@media(max-width:1100px){.alumni-item dt{font-size:20px}.alumni-item{gap:16px}.alumni-count{font-size:36px}}
+@media(max-width:760px){
+ .honours-page .honours-archive,.honours-page .honours-alumni{scroll-margin-top:16px}
+ .honours-page .honours-heading{display:block;margin-bottom:32px}
+ .honours-sections{gap:28px;margin-top:18px}
+ .honours-sections a{font-size:14px;min-height:44px;display:inline-flex;align-items:center;padding:8px 0}
+ .honours-subheading h2{font-size:21px}
+ .honours-page .honours-years{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 8px}
+ .honours-page .honours-years button:last-child{grid-column:auto}
+ .honours-year-heading h3{font-size:40px}
+ .honours-selected .honours-year-heading h3{font-size:58px}
+ .honours-year-range .honours-year-heading h3,.honours-selected .honours-year-range .honours-year-heading h3{font-size:40px}
+ .honours-alumni{padding-top:36px;margin-top:24px}
+ .alumni-list{grid-template-columns:1fr;margin-top:8px}
+ .alumni-item{padding:20px 0;gap:20px}
+ .alumni-item dt{font-size:18px}
+ .alumni-count{font-size:34px}
+ .alumni-unit{font-size:13px}
+}
+
+.honours-page .honours-subheading { flex-wrap: wrap; gap: 4px 18px; }
+.honours-page .honours-period { white-space: nowrap; }
+.honours-page .honours-year-range .honours-year-heading { container-type: inline-size; }
+.honours-page .honours-year-range .honours-year-heading h3 {
+  font-size: clamp(24px, 15cqw, 48px);
+  white-space: nowrap;
+}
+.honours-page .honours-year-range .honour-item { grid-column: 1 / -1; }
+
+html:lang(en) .honours-page .award-name,
+html:lang(en) .honours-page .alumni-item dt { overflow-wrap: normal; text-wrap: balance; }
+html:lang(en) .honours-page.honours-selected .honours-latest .honour-awards-expanded .award-name {
+  overflow-wrap: normal;
+}
+@container (max-width: 475px) {
+  html:lang(en) .honours-page.honours-selected .honours-latest .award-technical {
+    grid-column: 1 / -1;
+  }
+}
+html:lang(en) .honours-page .honours-season-note { font-size: clamp(18px, 1.75vw, 24px); }
+html:lang(en) .honours-page .honour-item .award-name { line-height: 1.45; }
+html:lang(en) .honours-page .alumni-list { gap: 0 clamp(24px, 4vw, 72px); }
+html:lang(en) .honours-page .alumni-item { gap: 12px; }
+html:lang(en) .honours-page .alumni-item dt { font-size: clamp(16px, 1.52vw, 22px); }
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  html:lang(en) .honours-page .honours-year {
+    grid-template-columns: minmax(120px, 16%) minmax(0, 1fr);
+    column-gap: 4%;
+  }
+  html:lang(en) .honours-page .honours-year:not(.honours-latest) .honours-composition {
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  }
+}
+@media (max-width: 1100px) {
+  html:lang(en) .honours-page .honours-year:not(.honours-latest) .award-name,
+  html:lang(en) .honours-page:not(.honours-selected) .honours-latest .award-name { font-size: 17px; }
+  html:lang(en) .honours-page .alumni-item dd {
+    flex-direction: column; align-items: flex-end; gap: 0;
+  }
+}
+@media (max-width: 900px) {
+  html:lang(en) .honours-page .alumni-list { grid-template-columns: 1fr; }
+}
+@media (max-width: 360px) {
+  html:lang(en) .honours-page .alumni-item { gap: 6px; }
+}

@@ -1,0 +1,203 @@
+{
+  "seasons": [
+    {
+      "year": "2026",
+      "events": [
+        {
+          "event": "中国区正赛",
+          "awards": [
+            "冠军"
+          ]
+        },
+        {
+          "event": "中国季后赛",
+          "awards": [
+            "冠军",
+            "亚军",
+            "控制创新奖",
+            "最佳程序奖"
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "events": [
+        {
+          "event": "中国区正赛",
+          "awards": [
+            "冠军",
+            "控制创新奖",
+            "最佳风尚奖"
+          ]
+        },
+        {
+          "event": "中国季后赛",
+          "awards": [
+            "冠军",
+            "亚军",
+            "卓越工程奖",
+            "最佳风尚奖"
+          ]
+        },
+        {
+          "event": "Istanbul Regional",
+          "awards": [
+            "亚军"
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "events": [
+        {
+          "event": "中国季后赛",
+          "awards": [
+            "冠军",
+            "最佳创意奖",
+            "最佳印象奖"
+          ]
+        },
+        {
+          "event": "Illinois Regional",
+          "awards": [
+            "冠军",
+            "工业设计奖"
+          ]
+        },
+        {
+          "event": "Bosphorus Regional",
+          "awards": [
+            "卓越工程奖"
+          ]
+        },
+        {
+          "event": "Arizona Valley Regional",
+          "awards": [
+            "半决赛联盟第三名",
+            "控制创新奖"
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "events": [
+        {
+          "event": "中国季后赛",
+          "awards": [
+            "冠军",
+            "创新卓越工程奖",
+            "半决赛联盟四强"
+          ]
+        },
+        {
+          "event": "Sacramento Regional",
+          "awards": [
+            "Judge Award"
+          ]
+        },
+        {
+          "event": "Festival de Robotique Regional",
+          "awards": [
+            "半决赛联盟第三名"
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2020—2022",
+      "note": "疫情停赛",
+      "events": []
+    },
+    {
+      "year": "2019",
+      "events": [
+        {
+          "event": "Heartland Regional",
+          "awards": [
+            "冠军",
+            "工业设计奖"
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2018",
+      "events": [
+        {
+          "event": "中国区正赛",
+          "awards": [
+            "冠军",
+            "亚军",
+            "资格赛排名第一",
+            "团队精神奖",
+            "最佳新秀奖",
+            "最佳风尚奖"
+          ]
+        },
+        {
+          "event": "中国季后赛",
+          "awards": [
+            "冠军",
+            "季军"
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2017",
+      "events": [
+        {
+          "event": "中国季后赛",
+          "awards": [
+            "冠军"
+          ]
+        }
+      ]
+    }
+  ],
+  "alumni": [
+    {
+      "university": "斯坦福大学",
+      "count": 6
+    },
+    {
+      "university": "哥伦比亚大学",
+      "count": 8
+    },
+    {
+      "university": "宾夕法尼亚大学",
+      "count": 3
+    },
+    {
+      "university": "麻省理工学院",
+      "count": 2
+    },
+    {
+      "university": "卡耐基梅隆大学",
+      "count": 5
+    },
+    {
+      "university": "加州大学伯克利分校",
+      "count": 12
+    },
+    {
+      "university": "牛津大学",
+      "count": 5
+    },
+    {
+      "university": "剑桥大学",
+      "count": 4
+    },
+    {
+      "university": "帝国理工学院",
+      "count": 12
+    },
+    {
+      "university": "香港大学",
+      "count": 36
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "foundryx-website",
+  "private": true,
+  "version": "20.0.0",
+  "scripts": {
+    "build": "npm run build:welcome && python3 src/campus/plan.py && python3 src/site/build.py && esbuild src/experience.jsx --bundle --minify --format=iife --target=es2020 --outfile=dist/client/experience.js --define:process.env.NODE_ENV='\"production\"' && esbuild src/page-motion.jsx --bundle --minify --format=iife --target=es2020 --outfile=dist/client/page-motion.js --define:process.env.NODE_ENV='\"production\"' && npm run build:immersive && npm run build:campus && node src/server/build.mjs && python3 src/site/finalize.py",
+    "dev": "node src/server/dev.mjs",
+    "build:welcome": "esbuild src/welcome/lifecycle.js --bundle --minify --format=iife --target=es2020 --outfile=src/site/published-welcome/welcome.js",
+    "build:immersive": "node src/immersive/depth/prepare.cjs && esbuild src/immersive/scene.js --bundle --minify --format=esm --splitting --target=es2020 --outdir=dist/client --entry-names=immersive --chunk-names=chunks/[name]-[hash]",
+    "db:generate": "drizzle-kit generate",
+    "build:campus": "esbuild src/campus/scene.js --bundle --minify --format=iife --target=es2020 --outfile=dist/client/campus.js",
+    "test": "node --test tests/*.mjs tests/*.cjs && python3 src/site/check.py",
+    "start:api": "node src/server/production.mjs"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.2",
+    "gsap": "^3.14.0",
+    "meshoptimizer": "^1.2.0",
+    "ogl": "^1.0.11",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10",
+    "esbuild": "^0.27.0"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

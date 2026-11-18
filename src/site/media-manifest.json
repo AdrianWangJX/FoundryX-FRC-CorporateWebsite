@@ -1,0 +1,74 @@
+{
+  "films/frc-field-film-20260928.mp4": {
+    "size": 123224258,
+    "sha256": "8955bb60514827dfee62c605d6c8851c4e64735ce33a6bb775dff6b501b8035e"
+  },
+  "films/frc-growth-film-20260928.mp4": {
+    "size": 65407882,
+    "sha256": "5f4571895827671fe198c0dee0f5cfd23a97a1e238132ae00f42386949cde596"
+  },
+  "films/frc-library-05-film-20260928.mp4": {
+    "size": 245433485,
+    "sha256": "3942840eeacad922b971a8c7d794d43385fc02f0ad6794416cca4128468745cb"
+  },
+  "films/frc-library-06-film-20260928.mp4": {
+    "size": 130924838,
+    "sha256": "3e181c2841e7fad520bb7e91e484864f9c18857f6174a31c9ad8a15cd4655f5d"
+  },
+  "films/frc-library-07-film-20260928.mp4": {
+    "size": 317388859,
+    "sha256": "38c39d31a0990db56c00ebb772cf020ecd5e21b7a3b119e9f907e82efaeb5702"
+  },
+  "films/frc-library-08-film-20260928.mp4": {
+    "size": 216348371,
+    "sha256": "b6facf84d61c9b389ccd7ed95086b8b80e17f09084e7b40e4b99c324fa77981a"
+  },
+  "films/frc-library-09-film-20260928.mp4": {
+    "size": 46866073,
+    "sha256": "bd530931c71206fcd46818d149e615f56c56231957cd6c09b828f4caa60496ca"
+  },
+  "films/frc-roles-film-20260928.mp4": {
+    "size": 600635771,
+    "sha256": "a55968de076617f1574fa796f93ec48729ea6a689a475447be3587d56e2e0f82"
+  },
+  "films/frc-season-film-20260928.mp4": {
+    "size": 124362494,
+    "sha256": "31229d48c964542e8b6461eaaeb5cb21b6330ab9c6cd41dfea2f27cf73f0f57b"
+  },
+  "films-mobile/frc-field-960-20261001.mp4": {
+    "size": 22185098,
+    "sha256": "aee617c1c59d73b4ff6b3461383516af81352c8225f647177c39a7e431ae6635"
+  },
+  "films-mobile/frc-growth-960-20261001.mp4": {
+    "size": 12954471,
+    "sha256": "b23b2408c1b2a14293241c76236310c33d1f8013856aa83930ead3def45944ed"
+  },
+  "films-mobile/frc-roles-960-20261001.mp4": {
+    "size": 128191333,
+    "sha256": "db72148ac2a93a152f5860ab3938245e56d5203dcb883ce9b687dbeb40583b42"
+  },
+  "films-mobile/frc-season-960-20261001.mp4": {
+    "size": 26563302,
+    "sha256": "83c438e4e9dee9eb7c9d0fd54de1b2fd9e5edb87c50488c3c6f1ea43e23e393b"
+  },
+  "films-stream/frc-library-05-960-20261008.mp4": {
+    "size": 40006589,
+    "sha256": "5bfa0d6dfc99e1b03a83c15b3ebef86760a2680d0feeaf5b1a164da90845c6a2"
+  },
+  "films-stream/frc-library-06-960-20261008.mp4": {
+    "size": 25672149,
+    "sha256": "1ea82f285b4e153d40833b454467fbffffd38a40a119a7abc0350ce95dcb4e4e"
+  },
+  "films-stream/frc-library-07-960-20261008.mp4": {
+    "size": 64718624,
+    "sha256": "72453bf5864e79237fa4c23a8a8c0b3403c945a8bce31f4d689608a5e78c08cc"
+  },
+  "films-stream/frc-library-08-960-20261008.mp4": {
+    "size": 33277110,
+    "sha256": "7584cba7d300c53c7719e005e87fd74cac03dc42389c06149e185c8e5622ac7c"
+  },
+  "films-stream/frc-library-09-960-20261008.mp4": {
+    "size": 8440515,
+    "sha256": "de291eb4053f58462d05f54da9bd02e1207627333e3e30b6ca68d906f9fe465c"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "version": 1,
+  "language": "zh-CN",
+  "checkedAt": "2026-09-18",
+  "contentType": "原创科普与学习建议；规则性事实附官方来源",
+  "editorialNote": "训练建议、家庭决策建议和作品记录方法为编辑性建议，不代表 FIRST 或任何院校的规定。各项资格、赛制与硬件要求以当季及具体赛事官方规则为准。",
+  "factLimits": [
+    "未对 FoundryX、导师、学生的历史成绩、费用、录取或服务效果作任何新增事实声明。",
+    "FRC 主要受众按当前 FIRST 主页面列为 14–18 岁、9–12 年级；个别地区与队伍要求须另查。",
+    "FIRST 官方当前将 Dean’s List 的现名称列为 FIRST Leadership Award；历史奖项应保留获奖当年的名称。",
+    "2026 Regional 晋级规则采用积分与 Regional Pool 等安排；不要改写成通用的“冠军自动晋级”。",
+    "技术内容为学习地图，不替代当季机器人规则、厂家文档、工具培训和现场成人指导。",
+    "FRC 与 VEX 比较不作贵贱或难度排名，VEX 具体子项目必须区分。",
+    "大学申请内容为记录与表达建议，不代表院校政策或录取加分承诺。"
+  ],
+  "articles": [
+    {
+      "id": "frc-start",
+      "track": "frc",
+      "category": "FRC 入门",
+      "title": "FRC 到底是什么？先看学生真正要做的事",
+      "summary": "从比赛是什么、适合谁，到如何开始，先把第一次接触 FRC 时最容易困惑的几个问题讲清楚。",
+      "updatedAt": "2026-09-18",
+      "sections": [
+        {
+          "id": "frc-start-1",
+          "heading": "什么是 FRC？",
+          "paragraphs": [
+            "FRC 是 FIRST Robotics Competition 的简称：高中生组成队伍，在导师支持下设计、制造和编程，让一台实体机器人完成每年变化的比赛任务。比赛时，机器人以三支队伍组成的联盟协作对抗；赛场之外，队伍还要安排预算、分工和技术交流。学生面对的不只是“机器人能不能动”，还包括它是否可靠、队友能否接手，以及有限时间里哪些功能值得优先完成。"
+          ]
+        },
+        {
+          "id": "frc-start-2",
+          "heading": "FRC 与 VEX 有什么区别？",
+          "paragraphs": [
+            "VEX 包含不同年龄段和技术平台，比较前应先明确是 VEX IQ、V5RC 还是其他项目。FRC 使用工业尺寸机器人，涉及更开放的零件设计、加工和系统集成；V5RC 围绕 VEX 平台及其当季规则组织设计，两者的材料、场地与赛事安排并不相同。选择时可以实际参观训练，比较孩子能承担的任务、队伍的指导能力和持续参与条件，而不只比较比赛名称。"
+          ]
+        },
+        {
+          "id": "frc-start-3",
+          "heading": "FRC 为什么被称为“体育与科技的结合”？",
+          "paragraphs": [
+            "观众看到的是有时间限制、有比分、需要联盟配合的现场比赛，学生经历的却是此前一轮轮工程试验。操作手必须在压力下执行策略，维修成员要判断故障，侦察成员则把场上的表现记录成可用于决策的信息。它像团队运动一样要求练习与配合，也要求用结构、电路、代码和证据解释每一次改进。"
+          ]
+        },
+        {
+          "id": "frc-start-4",
+          "heading": "FRC 适合几年级学生？",
+          "paragraphs": [
+            "FIRST 当前项目页面将 FRC 的主要对象列为 14–18 岁、9–12 年级学生，地区和具体队伍的加入条件可能有所不同。较低年级学生可以先接触基础训练，但能否注册、出场及承担具体角色，应由队伍按当季规则和当地安排确认。判断是否适合，除了年级，还要看学生的兴趣、独立完成任务的习惯以及是否能稳定参加集体训练。"
+          ]
+        },
+        {
+          "id": "frc-start-5",
+          "heading": "零基础能否参加？",
+          "paragraphs": [
+            "可以从基础任务开始，FIRST 也明确欢迎没有技术经验的学生加入。第一次训练可以先完成一项小而完整的工作，例如测量一个零件、阅读一段控制代码，或记录一场比赛的得分动作。加入前应了解新生训练、导师反馈和任务交接怎样安排，让“欢迎零基础”落实为真实的学习路径。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "FIRST · FRC 项目介绍",
+          "url": "https://www.firstinspires.org/programs/frc/"
+        },
+        {
+          "label": "FIRST · 加入与建立 FRC 队伍",
+          "url": "https://www.firstinspires.org/programs/frc/get-started"
+        },
+        {
+          "label": "VEX · 官方项目与当前赛题入口",
+          "url": "https://www.vexrobotics.com/official-path"
+        },
+        {
+          "label": "FIRST · District 与 Regional 赛事指南",
+          "url": "https://www.firstinspires.org/resources/library/frc/district-regional-events"
+        }
+      ]
+    },
+    {
+      "id": "frc-season",
+      "track": "frc",
+      "category": "赛季与比赛",
+      "title": "从 Kickoff 到比赛日：一个赛季怎样走过",
+      "summary": "赛季有共同的节奏，也有各支队伍自己的项目计划；理解规则、试制、联调和复盘比背几个时间名词更有用。",
+      "updatedAt": "2026-09-18",
+      "sections": [
+        {
+          "id": "frc-season-1",
+          "heading": "FRC 一个完整赛季如何进行？",
+          "paragraphs": [
+            "常见节奏是秋季招新和基础训练，1 月发布新赛题，随后进入设计、制造和测试，春季参加正式赛事。赛后还可以继续复盘、训练新人和参加 Off-Season 活动；具体日期应以当季官方日历和已报名赛事为准。对学生来说，一条可执行的计划应写出每个阶段的交付物：规则笔记、功能原型、能运行的机器人、测试记录和赛后总结。"
+          ]
+        },
+        {
+          "id": "frc-season-2",
+          "heading": "Kickoff、Build Season 和区域赛分别是什么？",
+          "paragraphs": [
+            "Kickoff 是新赛题与规则发布的重要起点；Build Season 是队伍把任务转化为机器人方案并不断验证的建设阶段。Regional 通常译为区域赛，是正式赛事体系的一种，另有 District 体系，它们的晋级安排不能混为一谈。建设并非“画完图才允许写程序”的单向流程，设计、接线、编程和策略需要从早期就互相校验；也不宜把所有赛季固定描述为统一的六周制作期。"
+          ]
+        },
+        {
+          "id": "frc-season-3",
+          "heading": "如何晋级全球总决赛？",
+          "paragraphs": [
+            "先确认队伍所属赛事体系，再查当季 FIRST Championship Eligibility 和比赛手册，不能只凭过去某年的规则判断。以 2026 年 Regional 体系为例，官方列出了赛事积分名额与 Regional Pool 等路径，District 则有自己的地区积分和锦标赛安排。名额分配与资格可能更新，因此报名和制定参赛计划时，应直接核对队伍所属体系、当年规则及官方资格状态。"
+          ]
+        },
+        {
+          "id": "frc-season-4",
+          "heading": "Off-Season 季后赛有什么价值？",
+          "paragraphs": [
+            "Off-Season 是正式赛季之外的活动或比赛安排，适合检验改进后的机器人，让新操作手和新队员积累经验。它可以成为练习换电、检修、侦察和联盟沟通的完整场景，不必等到下一次正式赛季才发现协作问题。展示获奖时应写明赛事全称、年份和 Off-Season 属性，不把它与 Regional、District 或 FIRST Championship 的成绩混用。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "FIRST · FRC Mentor Guide（2026 年 7 月版）",
+          "url": "https://community.firstinspires.org/hubfs/web/program/frc/resources/frc_mentor_guide.pdf"
+        },
+        {
+          "label": "FIRST · 当季赛题与官方资料",
+          "url": "https://www.firstinspires.org/programs/frc/game-and-season"
+        },
+        {
+          "label": "FIRST · Championship 晋级资格",
+          "url": "https://www.firstinspires.org/resources/library/frc/championship-eligibility"
+        },
+        {
+          "label": "FIRST · District 与 Regional 赛事指南",
+          "url": "https://www.firstinspires.org/resources/library/frc/district-regional-events"
+        },
+        {
+          "label": "FIRST · Off-Season 活动",
+          "url": "https://www.firstinspires.org/resources/library/frc/off-season-events"
+        }
+      ]
+    },
+    {
+      "id": "frc-roles",
+      "track": "frc",
+      "category": "队伍与分工",
+      "title": "不只有操作手：找到你在一支队伍里的位置",
+      "summary": "一台机器人背后有许多相互依赖的任务。把角色讲清楚，也要让学生看见角色之间怎样交接。",
+      "updatedAt": "2026-09-18",
+      "sections": [
+        {
+          "id": "frc-roles-1",
+          "heading": "机械组、电控组、编程组分别做什么？",
+          "paragraphs": [
+            "机械组把动作需求变成结构、传动和可装配的零件；电控组让供电、通信和传感器连接可靠；编程组把操控逻辑、自动动作与反馈控制写进程序。三组要共同约定安装空间、传感器位置、接口和测试方法，否则单独能工作的部件也可能无法组成可靠系统。新人可以先负责一个明确的小模块，再参加整机联调，理解自己的决定会怎样影响队友。"
+          ]
+        },
+        {
+          "id": "frc-roles-2",
+          "heading": "Drive Team 如何选拔？",
+          "paragraphs": [
+            "Drive Team 是比赛现场承担机器人操控及相关协作的人员组合，具体人数和角色资格由当季手册规定。队内选拔可通过规则理解、稳定操控、沟通质量、出勤和故障应对等可观察表现完成，而不只看某一次练习的最高得分。训练时应轮换和记录，让候选人都获得练习机会，也为比赛当天的替补与交接做准备。"
+          ]
+        },
+        {
+          "id": "frc-roles-3",
+          "heading": "Strategy、Scouting 和 Business Team 是什么？",
+          "paragraphs": [
+            "Strategy 将赛题转化为机器人能力与比赛计划；Scouting 记录对手和伙伴的实际表现，为策略和联盟选择提供依据。Business Team 常承担预算、筹款、对外沟通、品牌和活动组织等工作，具体分工由队伍决定。一个实用的起点，是把“我们觉得这台机器人很强”改成可比较的记录，并把“我们需要赞助”改成目标明确、预算清楚的合作提案。"
+          ]
+        },
+        {
+          "id": "frc-roles-4",
+          "heading": "不擅长编程的学生能参加吗？",
+          "paragraphs": [
+            "可以，机械设计、加工、接线、数据侦察、摄影写作和项目组织都需要持续投入。可以先选一个自己愿意负责的任务，同时学习基本赛题和机器人知识，避免各组只懂自己的工作。评价贡献时应看学生是否解决了真实问题、是否把工作交付给队友，而不把敲代码当成唯一有价值的参与方式。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "FIRST · 导师在 FRC 中的作用",
+          "url": "https://community.firstinspires.org/the-role-of-mentors-in-first-robotics-competition"
+        },
+        {
+          "label": "FIRST · District 与 Regional 赛事指南",
+          "url": "https://www.firstinspires.org/resources/library/frc/district-regional-events"
+        },
+        {
+          "label": "FIRST · 2026 REBUILT 比赛手册",
+          "url": "https://firstfrc.blob.core.windows.net/frc2026/Manual/HTML/2026GameManual.htm"
+        },
+        {
+          "label": "WPILib · FIRST 控制系统文档",
+          "url": "https://docs.wpilib.org/en/stable/"
+        }
+      ]
+    },
+    {
+      "id": "frc-parents",
+      "track": "frc",
+      "category": "家长指南",
+      "title": "加入之前，家长最该看清的五件事",
+      "summary": "时间、费用、安全与学生实际承担的工作，应该在进入赛季前谈清楚，而不是等到临近比赛再补充。",
+      "updatedAt": "2026-09-18",
+      "sections": [
+        {
+          "id": "frc-parents-1",
+          "heading": "FRC 需要投入多少时间？",
+          "paragraphs": [
+            "不同队伍和赛季阶段的安排差别很大，没有适用于所有学生的统一每周时长。咨询时可以索取近期真实的训练日历，并区分固定训练、个人准备、比赛出行与临近联调的集中工作。学生和家长应共同确认能持续投入的时间，再与队伍约定职责、请假和交接方式。"
+          ]
+        },
+        {
+          "id": "frc-parents-2",
+          "heading": "一个赛季的费用由哪些部分组成？",
+          "paragraphs": [
+            "预算通常需要考虑注册和赛事、机器人零件与耗材、工具和场地、运输及出行等项目，导师服务或课程费用应另行说明。FIRST 公布的注册费用并不等于一个家庭的全部参与成本，跨地区参赛和已有设备条件也会影响总预算。比较方案时可要求逐项列明包含内容、可能另付的项目、使用期限以及取消或变更的处理方式。"
+          ]
+        },
+        {
+          "id": "frc-parents-3",
+          "heading": "如何平衡 FRC 与校内学习？",
+          "paragraphs": [
+            "先把考试、作业和比赛日期放在同一份日历里，提前识别冲突，而不是到最后一周靠熬夜弥补。队伍可以把任务拆到可以交接的小单元，并在关键岗位安排备份，让缺席一天不等于整个组停工。每隔一段时间检查睡眠、学习和项目状态，必要时调整职责或参赛安排，持续投入不等于无限延长训练。"
+          ]
+        },
+        {
+          "id": "frc-parents-4",
+          "heading": "FRC 活动中有哪些安全风险？",
+          "paragraphs": [
+            "需要认真管理的场景包括机加工、机器人意外运动、夹挤、搬运以及电池和电气操作。训练应有相应成人指导、个人防护、工具培训与上电测试流程，人员进入机器人工作范围前要确认其处于安全状态。家长可以询问谁负责安全、事故如何报告、外出如何带队，并查看实际训练是否按制度执行；具体操作应遵循 FIRST 安全手册及学校和场地要求。"
+          ]
+        },
+        {
+          "id": "frc-parents-5",
+          "heading": "家长如何判断一支队伍是否专业？",
+          "paragraphs": [
+            "先看学生能否清楚解释自己做过的设计、测试与取舍，再看导师是否提供具体反馈以及是否有持续训练和新人培养机制。还可以查看工程记录、预算说明、赛季计划、安全流程，以及获奖信息能否对上官方赛事和队号。一次漂亮展示或一张奖状都不足以说明全部情况，观察一次正常训练和一次工作交接通常更有帮助。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "FIRST · 队伍预算项目参考（2025 年 8 月版）",
+          "url": "https://www.firstinspires.org/hubfs/web/program/frc/resources/example-budget.pdf?hsLang=en"
+        },
+        {
+          "label": "FIRST · 项目注册与费用说明",
+          "url": "https://www.firstinspires.org/programs/cost-and-registration"
+        },
+        {
+          "label": "FIRST · 安全资源与安全手册",
+          "url": "https://www.firstinspires.org/resources/library/safety"
+        },
+        {
+          "label": "WPILib · 机器人基础接线",
+          "url": "https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-1/basic-robot-wiring.html"
+        },
+        {
+          "label": "FIRST · 导师在 FRC 中的作用",
+          "url": "https://community.firstinspires.org/the-role-of-mentors-in-first-robotics-competition"
+        }
+      ]
+    },
+    {
+      "id": "frc-growth",
+      "track": "frc",
+      "category": "成长与申请",
+      "title": "把一季经历，变成可以讲清楚的成长",
+      "summary": "比赛结果很直观，个人贡献却需要记录。真正有用的材料来自长期参与中的决定、证据与反思。",
+      "updatedAt": "2026-09-18",
+      "sections": [
+        {
+          "id": "frc-growth-1",
+          "heading": "FRC 能培养哪些能力？",
+          "paragraphs": [
+            "学生有机会练习把模糊目标拆成可测试的要求，再通过设计、制造、代码和测试完成它。团队项目还会暴露沟通、计划、预算和交接中的问题，让学生学习对共同结果负责。是否形成这些能力取决于实际参与深度，可以用设计评审、测试日志和独立说明来观察，而不只用训练时长判断。"
+          ]
+        },
+        {
+          "id": "frc-growth-2",
+          "heading": "FRC 经历如何形成申请材料？",
+          "paragraphs": [
+            "从赛季开始就记录“问题是什么、我负责什么、试过哪些办法、结果如何”，比事后补写一段宏大的感想更可靠。可保留经允许公开的 CAD、代码提交、实验对比、照片与复盘，并明确个人贡献和团队成果的界线。申请材料应按目标院校要求选择最有说明力的部分，团队获奖不能自动写成个人独立完成，也没有某项活动保证录取。"
+          ]
+        },
+        {
+          "id": "frc-growth-3",
+          "heading": "Dean’s List、Impact Award 等个人与团队奖项是什么？",
+          "paragraphs": [
+            "用户常说的 Dean’s List 是 2010–2025 年的历史名称，FIRST 官方当前采用 FIRST Leadership Award，关注学生的领导力及对团队和 FIRST 社群的贡献。FIRST Impact Award 是团队奖项，重视团队作为榜样的作用及持续影响，与赛场得分冠军不是同一个维度。展示时应注明年份、赛事层级和准确状态，例如获提名、Finalist 或最终获奖，并保留相应官方记录。"
+          ]
+        },
+        {
+          "id": "frc-growth-4",
+          "heading": "大学如何看待持续多年的工程项目？",
+          "paragraphs": [
+            "不同大学的评审目标和材料要求不同，不能把参加年数换算成统一的录取优势。对申请者更有帮助的是讲清多年参与中责任如何变化：是否从执行任务走到做取舍、带新人、维护一个可持续的团队。项目经历应与真实兴趣和学习过程相连，具体提交哪些材料应以目标院校当年的官方申请说明为准。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "FIRST · FRC 项目介绍",
+          "url": "https://www.firstinspires.org/programs/frc/"
+        },
+        {
+          "label": "FIRST · 导师在 FRC 中的作用",
+          "url": "https://community.firstinspires.org/the-role-of-mentors-in-first-robotics-competition"
+        },
+        {
+          "label": "FIRST · FRC 奖项说明",
+          "url": "https://www.firstinspires.org/resources/library/frc/awards"
+        },
+        {
+          "label": "FIRST · Leadership Award 与历届获奖者",
+          "url": "https://www.firstinspires.org/resources/library/frc/first-leadership-award-winners"
+        }
+      ]
+    },
+    {
+      "id": "frc-technical",
+      "track": "frc",
+      "category": "技术资料",
+      "title": "从能动起来，到能够稳定工作",
+      "summary": "这些入门提示帮助学生建立工程地图。第一次动手应在导师指导下进行，并使用与队伍实际硬件、软件版本一致的资料。",
+      "updatedAt": "2026-09-18",
+      "sections": [
+        {
+          "id": "frc-technical-1",
+          "heading": "机器人基本结构怎样理解？",
+          "paragraphs": [
+            "可以先把机器人分成底盘、执行机构、供电与控制系统，再观察它们通过哪些机械和电气接口连接。底盘决定如何移动，机构完成具体任务，传感器和程序则帮助机器人知道自己的状态。学习时先画一张系统关系图，并标出每个部件的作用，比直接照抄一台复杂机器人的外形更容易定位问题。"
+          ]
+        },
+        {
+          "id": "frc-technical-2",
+          "heading": "机械加工从哪里开始？",
+          "paragraphs": [
+            "先学会读尺寸、识别基准、测量和检查装配，再在受训成人指导下使用对应工具。一个入门任务可以是按图完成简单支架，检查孔位、去除毛刺并确认它能与其他零件正确连接。加工速度不是第一指标，防护、固定工件、工具授权和清理习惯都应成为每次操作的一部分。"
+          ]
+        },
+        {
+          "id": "frc-technical-3",
+          "heading": "电控系统入门要先理解什么？",
+          "paragraphs": [
+            "先区分电源路径和信号路径：电池与配电系统供能，控制器、通信总线和传感器让指令与状态流动。按队伍实际设备使用 WPILib 及厂家文档，做好线号、接口和连接检查；首次上电前应由另一位有经验的人复核接线。测试时让机器人处于受控的安全状态，再逐项确认通信与动作，不要通过随意试插或反复通电来猜故障。"
+          ]
+        },
+        {
+          "id": "frc-technical-4",
+          "heading": "Java 编程与 WPILib 怎样入门？",
+          "paragraphs": [
+            "Java 是编程语言，WPILib 则提供机器人硬件接口、运行框架和相关工具，两者需要配合学习。可以先掌握变量、函数、类和基本调试，再使用官方项目模板理解禁用、自动和手动控制等运行状态。开始阶段先让一个简单动作在仿真或安全测试中按预期执行，然后加入传感器、日志和异常处理，而不是一开始就堆满自动功能。"
+          ]
+        },
+        {
+          "id": "frc-technical-5",
+          "heading": "CAD 与工程设计有什么关系？",
+          "paragraphs": [
+            "CAD 用于表达零件和装配关系，工程设计还要回答为什么采用这种结构、它承受什么载荷、怎样加工以及如何维修。建模前可先列出空间、质量、动作和接口要求，用简单原型排除明显不可行的方案。评审时既看模型，也看装配顺序、紧固位置和测试证据；画得漂亮并不自动意味着能制造或能可靠工作。"
+          ]
+        },
+        {
+          "id": "frc-technical-6",
+          "heading": "赛季规则应该怎样读？",
+          "paragraphs": [
+            "先读任务、计分和比赛流程，再把机器人尺寸、零件、场内行为及检查要求整理成队伍的核对表。对影响方案的条款记录编号和版本，遇到疑问时查询当季更新与官方 Q&A，而不依赖转述或上一年的印象。规则讨论应在设计前和重大修改时重新进行，让每个关键决定都能找到依据。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "WPILib · FIRST 控制系统文档",
+          "url": "https://docs.wpilib.org/en/stable/"
+        },
+        {
+          "label": "WPILib · 机器人基础接线",
+          "url": "https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-1/basic-robot-wiring.html"
+        },
+        {
+          "label": "WPILib · 创建机器人程序",
+          "url": "https://docs.wpilib.org/en/stable/docs/software/vscode-overview/creating-robot-program.html"
+        },
+        {
+          "label": "WPILib · 机器人仿真",
+          "url": "https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/robot-simulation/introduction.html"
+        },
+        {
+          "label": "FIRST · 安全资源与安全手册",
+          "url": "https://www.firstinspires.org/resources/library/safety"
+        },
+        {
+          "label": "FIRST · 当季赛题与官方资料",
+          "url": "https://www.firstinspires.org/programs/frc/game-and-season"
+        },
+        {
+          "label": "FIRST · 2026 REBUILT 比赛手册",
+          "url": "https://firstfrc.blob.core.windows.net/frc2026/Manual/HTML/2026GameManual.htm"
+        }
+      ]
+    }
+  ],
+  "articleCount": 6,
+  "questionCount": 28
+}
