@@ -149,7 +149,7 @@ class Standalone(HTMLParser):
             path = self.resources.local_path(attrs['href'], self.page)
             if path is None:
                 raise ValueError('Standalone preview requires local stylesheets')
-            css = self.resources.css(path.read_text(), path.relative_to(self.resources.dist).as_posix())
+            css = self.resources.css(path.read_text(encoding='utf-8'), path.relative_to(self.resources.dist).as_posix())
             self.output.append('<style>' + css + '</style>')
             return
         if name in {'script', 'style'}:
@@ -194,7 +194,7 @@ class Standalone(HTMLParser):
                     path = self.resources.local_path(attrs.pop('src'), self.page)
                     if path is None:
                         raise ValueError('Standalone preview requires local scripts')
-                    code = self.resources.module(path) if attrs.get('type') == 'module' else path.read_text()
+                    code = self.resources.module(path) if attrs.get('type') == 'module' else path.read_text(encoding='utf-8')
                     # Resource-integrity hashes no longer apply to inline code.
                     for key in ('integrity', 'crossorigin', 'defer', 'async'):
                         attrs.pop(key, None)
@@ -229,7 +229,7 @@ history.scrollRestoration='manual';scrollTo({top:0,left:0,behavior:'instant'});}
         self.output.append('<!' + decl + '>')
 
     def render(self):
-        self.feed((self.resources.dist / self.page).read_text())
+        self.feed((self.resources.dist / self.page).read_text(encoding='utf-8'))
         self.close()
         for module, code in self.scripts:
             subprocess.run(['node', '--check', '--input-type=' + ('module' if module else 'commonjs')],
@@ -297,7 +297,7 @@ def main():
     report = {'standalone': []}
     for page, name in [('index.html', 'FoundryX-FRC.html'), ('immersive.html', 'FoundryX-FRC-沉浸体验.html')]:
         path = output / name
-        path.write_text(Standalone(resources, page).render())
+        path.write_text(Standalone(resources, page).render(), encoding='utf-8')
         report['standalone'].append({'file': name, 'bytes': path.stat().st_size})
     report['embedded_assets'] = len(resources.embedded)
     report['streamed_media'] = sorted(resources.streamed)
