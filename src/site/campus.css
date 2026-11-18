@@ -53,7 +53,7 @@
 .campus-interiors>header p{font-size:12px;color:#bba99b;line-height:1.8;margin:0;white-space:nowrap}
 .campus-interior-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
 .campus-interior-grid figure{margin:0;min-width:0}
-.campus-interior-grid img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+.campus-interior-grid img{display:block;width:100%;height:auto}
 .campus-interior-grid figcaption{font-size:14px;line-height:1.8;color:#e2ccbc;margin-top:15px}
 .campus-interior-grid figcaption span{font-size:12px;color:#bba99b}
 @media(max-width:760px){.campus-interiors{margin:24px 0 0;padding-top:27px}.campus-interiors>header{display:block;margin-bottom:22px}.campus-interiors h2{font-size:23px}.campus-interiors>header p{margin-top:9px}.campus-interior-grid{grid-template-columns:1fr;gap:28px}.campus-interior-grid figcaption{margin-top:12px}}
